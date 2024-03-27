@@ -30,7 +30,7 @@
 
   <PropertyGroup>
     <PackageId>RevitVersion.DefineConstants</PackageId>
-    <Version>1.0.0-beta.2</Version>
+    <Version>1.0.0-beta.4</Version>
     <ProjectGuid>{92328A76-ABD3-4197-AB06-19741F2F4566}</ProjectGuid>
   </PropertyGroup>
 

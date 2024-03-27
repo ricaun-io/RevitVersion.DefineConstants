@@ -4,6 +4,13 @@ namespace RevitVersion.DefineConstants.Tests
 {
     public class Tests
     {
+#if REVIT_TEST
+        [Test]
+        public void Test()
+        {
+            Assert.Pass();
+        }
+#endif
 #if REVIT2025
         [Test]
         public void Test2025()
