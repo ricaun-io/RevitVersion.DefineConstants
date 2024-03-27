@@ -30,7 +30,6 @@
         public class Revit2017 { }
 #endif
 
-
 #if REVIT2025_OR_LESS
         public class Revit2025OrLess { }
 #endif
@@ -87,4 +86,7 @@
         public class Revit2017OrGreater { }
 #endif
     }
+#if TEST
+    public class Test { }
+#endif
 }
