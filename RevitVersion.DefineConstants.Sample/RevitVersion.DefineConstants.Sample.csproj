@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net45</TargetFramework>
+    <RevitVersion>2023</RevitVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RevitVersion.DefineConstants" Version="*-*" />
+  </ItemGroup> 
+
+</Project>

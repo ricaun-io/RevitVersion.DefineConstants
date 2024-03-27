@@ -1,0 +1,15 @@
+<Project>
+
+  <PropertyGroup>
+    <RevitDefineConstants>2024</RevitDefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(RevitDefineConstants)' != '' and $(RevitVersion) &lt;= $(RevitDefineConstants)">
+    <DefineConstants>$(DefineConstants);REVIT$(RevitDefineConstants)_OR_LESS</DefineConstants>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(RevitDefineConstants)' != '' and $(RevitVersion) &gt;= $(RevitDefineConstants)">
+    <DefineConstants>$(DefineConstants);REVIT$(RevitDefineConstants)_OR_GREATER</DefineConstants>
+  </PropertyGroup>
+
+</Project>

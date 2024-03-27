@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevitVersion.DefineConstants", "RevitVersion.DefineConstants\RevitVersion.DefineConstants.csproj", "{92328A76-ABD3-4197-AB06-19741F2F4566}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Build", "Build\Build.csproj", "{0B30860B-8D9D-4138-9655-5823A9ADCFB3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution", "Solution", "{762FAA33-5139-481F-A53F-1F260985DCB9}"
+	ProjectSection(SolutionItems) = preProject
+		CHANGELOG.md = CHANGELOG.md
+		LICENSE = LICENSE
+		nuget.config = nuget.config
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RevitVersion.DefineConstants.Sample", "RevitVersion.DefineConstants.Sample\RevitVersion.DefineConstants.Sample.csproj", "{A6A89BCB-55F2-4918-AED1-8E47373740AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{92328A76-ABD3-4197-AB06-19741F2F4566}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92328A76-ABD3-4197-AB06-19741F2F4566}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92328A76-ABD3-4197-AB06-19741F2F4566}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92328A76-ABD3-4197-AB06-19741F2F4566}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B30860B-8D9D-4138-9655-5823A9ADCFB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B30860B-8D9D-4138-9655-5823A9ADCFB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A89BCB-55F2-4918-AED1-8E47373740AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A6A89BCB-55F2-4918-AED1-8E47373740AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A6A89BCB-55F2-4918-AED1-8E47373740AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A6A89BCB-55F2-4918-AED1-8E47373740AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28E9858A-A611-41EA-8898-E8921DBA8668}
+	EndGlobalSection
+EndGlobal

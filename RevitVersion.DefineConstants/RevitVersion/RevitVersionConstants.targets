@@ -1,0 +1,16 @@
+<Project>
+
+  <!-- Revit DefineConstants. -->
+  <PropertyGroup Condition="'$(RevitVersion)' != ''">
+    <DefineConstants>$(DefineConstants);REVIT$(RevitVersion)</DefineConstants>
+  </PropertyGroup>
+
+  <!-- Revit DefineConstants for each Version -->
+  <Import Project="RevitVersionConstants.*.targets" Condition="'$(RevitVersion)' != ''" />
+
+  <!-- Remove RevitDefineConstants -->
+  <PropertyGroup>
+    <RevitDefineConstants></RevitDefineConstants>
+  </PropertyGroup>
+
+</Project>

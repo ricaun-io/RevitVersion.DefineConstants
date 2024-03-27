@@ -1,0 +1,6 @@
+<Project>
+
+  <!-- Revit DefineConstants. -->
+  <Import Project="RevitVersionConstants.targets"/>
+
+</Project>
