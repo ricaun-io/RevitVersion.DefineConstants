@@ -5,5 +5,6 @@ using ricaun.Nuke.Components;
 
 class Build : NukeBuild, IPublishPack, IPrePack
 {
+    bool IPack.UnlistNuget => true;
     public static int Main() => Execute<Build>(x => x.From<IPublishPack>().Build);
 }
