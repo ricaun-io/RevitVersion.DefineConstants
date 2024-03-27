@@ -15,10 +15,10 @@ namespace RevitVersion.DefineConstants.Tests
 Assert.AreEqual(2, count);
 #endif
 #if NET47
-Assert.AreEqual(6, count);
+Assert.AreEqual(4, count);
 #endif
 #if NET48
-Assert.AreEqual(8, count);
+Assert.AreEqual(6, count);
 #endif
 #if NET8_0
 Assert.AreEqual(10, count);
