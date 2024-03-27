@@ -1,16 +1,49 @@
 using NUnit.Framework;
+using System.Linq;
+using System.Reflection;
 
 namespace RevitVersion.DefineConstants.Tests
 {
-    public class Tests
+    public class CountTests
     {
-#if REVIT_TEST
         [Test]
         public void Test()
+        {
+            var count = GetCountTests() - 1;
+            System.Console.WriteLine(count);
+#if NET46
+Assert.AreEqual(2, count);
+#endif
+#if NET47
+Assert.AreEqual(6, count);
+#endif
+#if NET48
+Assert.AreEqual(8, count);
+#endif
+#if NET8_0
+Assert.AreEqual(10, count);
+#endif
+        }
+
+        private int GetCountTests()
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            var methods = assembly.GetExportedTypes().SelectMany(e => e.GetMethods());
+            var tests = methods.Where(e => e.GetCustomAttributes(typeof(TestAttribute), false).Length > 0).ToArray();
+            return tests.Length;
+        }
+
+#if NET2017_OR_GREATER
+        [Test]
+        public void NetTest2025()
         {
             Assert.Pass();
         }
 #endif
+    }
+
+    public class Tests
+    {
 #if REVIT2025
         [Test]
         public void Test2025()

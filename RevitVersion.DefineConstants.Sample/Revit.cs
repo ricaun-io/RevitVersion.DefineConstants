@@ -61,4 +61,10 @@
 #if TEST
     public class Test { }
 #endif
+#if REVIT_TEST
+    public class RevitTest { }
+#endif
+#if NET2017_OR_GREATER
+    public class NetTest { }
+#endif
 }

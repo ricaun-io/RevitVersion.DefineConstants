@@ -20,11 +20,10 @@
 
     <ItemGroup>
       <_SupportedRevitVersions Include="@(SupportedRevitVersion->'%(Identity)'->TrimStart('REVIT'))" />
-      <_CompatibleFrameworkVersions Include="@(_SupportedRevitVersions)" Condition=" %(Identity) != '' and $([MSBuild]::VersionLessThanOrEquals(%(Identity), $(RevitVersion))) " />
+      <_CompatibleRevitVersions Include="@(_SupportedRevitVersions)" Condition=" %(Identity) != '' and $([MSBuild]::VersionLessThanOrEquals(%(Identity), $(RevitVersion))) " />
 
-      <_ImplicitDefineConstant Include="REVIT_TEST" />
       <_ImplicitDefineConstant Include="REVIT$(RevitVersion)" />
-      <_ImplicitDefineConstant Include="@(_CompatibleFrameworkVersions->'REVIT%(Identity)_OR_GREATER'->Replace('.', '_'))" />
+      <_ImplicitDefineConstant Include="@(_CompatibleRevitVersions->'REVIT%(Identity)_OR_GREATER'->Replace('.', '_'))" />
     </ItemGroup>
   </Target>
 
