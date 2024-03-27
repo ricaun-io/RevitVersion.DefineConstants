@@ -6,7 +6,7 @@
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
 
-Convert `RevitVersion` property to `DefineConstants` with version 2017 to 2025. 
+Convert `RevitVersion` property to `DefineConstants` with version `2017` to `2025` with [or-greater-defines](https://github.com/dotnet/designs/blob/main/accepted/2020/or-greater-defines/or-greater-defines.md).
 
 ## Installation
 
@@ -28,7 +28,6 @@ Generate `DefineConstants`:
 <PropertyGroup>
   <DefineConstants>$(DefineConstants);REVIT2024</DefineConstants>
   <DefineConstants>$(DefineConstants);REVIT2024_OR_GREATER;REVIT2023_OR_GREATER;REVIT2022_OR_GREATER;REVIT2021_OR_GREATER;REVIT2020_OR_GREATER;REVIT2019_OR_GREATER;REVIT2018_OR_GREATER;REVIT2017_OR_GREATER</DefineConstants>
-  <DefineConstants>$(DefineConstants);REVIT2024_OR_LESS;REVIT2025_OR_LESS</DefineConstants>
 </PropertyGroup>
 ```
 

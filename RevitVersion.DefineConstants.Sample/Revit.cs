@@ -30,34 +30,6 @@
         public class Revit2017 { }
 #endif
 
-#if REVIT2025_OR_LESS
-        public class Revit2025OrLess { }
-#endif
-#if REVIT2024_OR_LESS
-        public class Revit2024OrLess { }
-#endif
-#if REVIT2023_OR_LESS
-        public class Revit2023OrLess { }
-#endif
-#if REVIT2022_OR_LESS
-        public class Revit2022OrLess { }
-#endif
-#if REVIT2021_OR_LESS
-        public class Revit2021OrLess { }
-#endif
-#if REVIT2020_OR_LESS
-        public class Revit2020OrLess { }
-#endif
-#if REVIT2019_OR_LESS
-        public class Revit2019OrLess { }
-#endif
-#if REVIT2018_OR_LESS
-        public class Revit2018OrLess { }
-#endif
-#if REVIT2017_OR_LESS
-        public class Revit2017OrLess { }
-#endif
-
 #if REVIT2025_OR_GREATER
         public class Revit2025OrGreater { }
 #endif
