@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <!-- Add RevitVerison and OR_GREATER defines -->
-  <Target Name="GenerateRevitVersionDefineConstants" AfterTargets="PrepareForBuild">
+  <Target Name="GenerateRevitVersionDefineConstants" AfterTargets="PrepareForBuild" Condition="'$(RevitVersion)' != ''">
 
     <ItemGroup>
       <_SupportedRevitVersions Include="@(SupportedRevitVersion->'%(Identity)'->TrimStart('REVIT'))" />

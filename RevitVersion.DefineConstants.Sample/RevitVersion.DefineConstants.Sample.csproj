@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net45</TargetFramework>
-    <RevitVersion>2021</RevitVersion>
+    <RevitVersion>2017</RevitVersion>
     <DefineConstants>TEST</DefineConstants>
   </PropertyGroup>
 
@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <!-- Add RevitVerison and OR_GREATER defines -->
-  <Target Name="GenerateRevitVersionDefineConstants" AfterTargets="PrepareForBuild">
+  <Target Name="GenerateRevitVersionDefineConstants" AfterTargets="PrepareForBuild" Condition="'$(RevitVersion)' != ''">
 
     <ItemGroup>
       <_SupportedRevitVersions Include="@(SupportedRevitVersion->'%(Identity)'->TrimStart('REVIT'))" />
