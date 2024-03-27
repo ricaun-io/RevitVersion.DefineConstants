@@ -98,7 +98,6 @@
     <None Include="$(MSBuildProjectName).props" PackagePath="build" Pack="true" />
     <None Include="$(MSBuildProjectName).targets" PackagePath="build" Pack="true" />
     <None Include="RevitVersion\**\*" PackagePath="build" Pack="true" />
-    <!--<Content Include="build\**\*" />-->
     <Compile Remove="**\*" />
   </ItemGroup>
 
