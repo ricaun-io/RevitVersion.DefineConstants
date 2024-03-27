@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.0] / 2024-03-27
 ### Features
 - `RevitVersion` to `DefineConstants`
-- `REVIT####_OR_GREATER` and `REVIT####_OR_LESS`
+- `XXX_OR_GREATER` and `XXX_OR_LESS`
 
 [vNext]: ../../compare/1.0.0...HEAD
 [1.0.0]: ../../compare/1.0.0
