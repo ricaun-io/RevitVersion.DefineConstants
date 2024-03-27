@@ -8,6 +8,6 @@
 
   <ItemGroup>
     <PackageReference Include="RevitVersion.DefineConstants" Version="*-*" />
-  </ItemGroup> 
+  </ItemGroup>
 
 </Project>

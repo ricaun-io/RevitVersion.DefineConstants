@@ -45,7 +45,7 @@
     <Product>$(PackageId)</Product>
     <Copyright>Copyright © $(CopyrightYears) $(Company)</Copyright>
   </PropertyGroup>
-  
+
   <PropertyGroup>
     <GitHubRepositoryOwner>ricaun-io</GitHubRepositoryOwner>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -100,5 +100,19 @@
     <None Include="RevitVersion\**\*" PackagePath="build" Pack="true" />
     <Compile Remove="**\*" />
   </ItemGroup>
+
+  <Target Name="CopyFiles" AfterTargets="AfterBuild">
+
+    <ItemGroup>
+      <CopyItem Include="$(OutputPath)\*.nupkg" />
+    </ItemGroup>
+
+    <PropertyGroup>
+      <CopyDir>..\references\</CopyDir>
+    </PropertyGroup>
+
+    <Copy SourceFiles="@(CopyItem)" DestinationFolder="$(CopyDir)" />
+
+  </Target>
 
 </Project>
