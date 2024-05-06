@@ -30,7 +30,7 @@
 
   <PropertyGroup>
     <PackageId>RevitVersion.DefineConstants</PackageId>
-    <Version>1.0.0-beta.10</Version>
+    <Version>1.0.0-beta.3</Version>
     <ProjectGuid>{92328A76-ABD3-4197-AB06-19741F2F4566}</ProjectGuid>
   </PropertyGroup>
 
@@ -101,7 +101,7 @@
     <Compile Remove="**\*" />
   </ItemGroup>
 
-  <Target Name="CopyFiles" AfterTargets="AfterBuild">
+  <Target Name="CopyFiles" AfterTargets="Pack">
 
     <ItemGroup>
       <CopyItem Include="$(OutputPath)\*.nupkg" />

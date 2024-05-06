@@ -65,6 +65,12 @@
           "type": "boolean",
           "description": "Shows the execution plan (HTML)"
         },
+        "PreReleaseFilter": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
         "Profile": {
           "type": "array",
           "description": "Defines the profiles to load",
@@ -99,9 +105,10 @@
               "Build",
               "Clean",
               "Compile",
-              "CopyNupkg",
+              "GitPreRelease",
               "GitRelease",
               "Pack",
+              "PrePack",
               "Release",
               "Sign",
               "Test"
@@ -121,9 +128,10 @@
               "Build",
               "Clean",
               "Compile",
-              "CopyNupkg",
+              "GitPreRelease",
               "GitRelease",
               "Pack",
+              "PrePack",
               "Release",
               "Sign",
               "Test"
