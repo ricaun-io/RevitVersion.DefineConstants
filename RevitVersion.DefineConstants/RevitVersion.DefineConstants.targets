@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <SupportedRevitVersion Include="2015" />
+    <SupportedRevitVersion Include="2016" />
     <SupportedRevitVersion Include="2017" />
     <SupportedRevitVersion Include="2018" />
     <SupportedRevitVersion Include="2019" />
