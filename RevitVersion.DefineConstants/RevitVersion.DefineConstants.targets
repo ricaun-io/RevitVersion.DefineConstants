@@ -3,16 +3,25 @@
   <!-- Revit DefineConstants. -->
   <!--<Import Project="RevitVersionConstants.targets"/>-->
 
+  <PropertyGroup>
+    <RevitVersionMinimal Condition="'$(RevitVersionMinimal)' == ''">2019</RevitVersionMinimal>
+  </PropertyGroup>
+
   <ItemGroup>
-    <SupportedRevitVersion Include="2017" DisplayName="2017" Alias="2017" />
-    <SupportedRevitVersion Include="2018" DisplayName="2018" Alias="2018" />
-    <SupportedRevitVersion Include="2019" DisplayName="2019" Alias="2019" />
-    <SupportedRevitVersion Include="2020" DisplayName="2020" Alias="2020" />
-    <SupportedRevitVersion Include="2021" DisplayName="2021" Alias="2021" />
-    <SupportedRevitVersion Include="R2022" DisplayName="2022" Alias="2022" />
-    <SupportedRevitVersion Include="R2023" DisplayName="2023" Alias="2023" />
-    <SupportedRevitVersion Include="R2024" DisplayName="2024" Alias="2024" />
-    <SupportedRevitVersion Include="R2025" DisplayName="2025" Alias="2025" />
+    <SupportedRevitVersion Include="2017" />
+    <SupportedRevitVersion Include="2018" />
+    <SupportedRevitVersion Include="2019" />
+    <SupportedRevitVersion Include="2020" />
+    <SupportedRevitVersion Include="2021" />
+    <SupportedRevitVersion Include="2022" />
+    <SupportedRevitVersion Include="2023" />
+    <SupportedRevitVersion Include="2024" />
+    <SupportedRevitVersion Include="2025" />
+    <SupportedRevitVersion Include="2026" />
+    <SupportedRevitVersion Include="2027" />
+    <SupportedRevitVersion Include="2028" />
+    <SupportedRevitVersion Include="2029" />
+    <SupportedRevitVersion Include="2030" />
   </ItemGroup>
 
   <!-- Add RevitVerison and OR_GREATER defines -->
@@ -20,7 +29,7 @@
 
     <ItemGroup>
       <_SupportedRevitVersions Include="@(SupportedRevitVersion->'%(Identity)'->TrimStart('REVIT'))" />
-      <_CompatibleRevitVersions Include="@(_SupportedRevitVersions)" Condition=" %(Identity) != '' and $([MSBuild]::VersionLessThanOrEquals(%(Identity), $(RevitVersion))) " />
+      <_CompatibleRevitVersions Include="@(_SupportedRevitVersions)" Condition=" %(Identity) != '' and $([MSBuild]::VersionLessThanOrEquals(%(Identity), $(RevitVersion))) and $([MSBuild]::VersionGreaterThanOrEquals(%(Identity), $(RevitVersionMinimal)))" />
 
       <_ImplicitDefineConstant Include="REVIT$(RevitVersion)" />
       <_ImplicitDefineConstant Include="@(_CompatibleRevitVersions->'REVIT%(Identity)_OR_GREATER'->Replace('.', '_'))" />
