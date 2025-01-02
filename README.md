@@ -38,7 +38,7 @@ Generate `DefineConstants`:
 ```xml
 <PropertyGroup>
   <DefineConstants>$(DefineConstants);REVIT2024</DefineConstants>
-  <DefineConstants>$(DefineConstants);REVIT2024_OR_GREATER;REVIT2023_OR_GREATER;REVIT2022_OR_GREATER;REVIT2021_OR_GREATER;REVIT2020_OR_GREATER;REVIT2019_OR_GREATER;REVIT2018_OR_GREATER;REVIT2017_OR_GREATER</DefineConstants>
+  <DefineConstants>$(DefineConstants);REVIT2024_OR_GREATER;REVIT2023_OR_GREATER;REVIT2022_OR_GREATER;REVIT2021_OR_GREATER;REVIT2020_OR_GREATER;REVIT2019_OR_GREATER</DefineConstants>
 </PropertyGroup>
 ```
 
@@ -109,6 +109,8 @@ Generate `DefineConstants`:
   <DefineConstants>$(DefineConstants);REVIT2024_OR_GREATER;REVIT2023_OR_GREATER;REVIT2022_OR_GREATER;REVIT2021_OR_GREATER</DefineConstants>
 </PropertyGroup>
 ```
+
+**The default value of `RevitVersionMinimal` is `2019`.**
 
 ### SupportedRevitVersion
 

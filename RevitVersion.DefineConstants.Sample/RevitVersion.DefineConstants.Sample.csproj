@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net45</TargetFramework>
-    <RevitVersion>2019</RevitVersion>
+    <RevitVersion>2021</RevitVersion>
     <DefineConstants>TEST</DefineConstants>
   </PropertyGroup>
 
