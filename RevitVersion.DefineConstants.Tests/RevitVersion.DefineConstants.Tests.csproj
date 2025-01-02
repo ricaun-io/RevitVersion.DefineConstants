@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFrameworks>net46;net47;net48;net8.0</TargetFrameworks>
+    <RevitVersionMinimal>2017</RevitVersionMinimal>
   </PropertyGroup>
 
   <Choose>
