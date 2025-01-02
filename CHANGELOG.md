@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.0] / 2024-03-27
 ### Features
+- Add `RevitVersionMinimal` `PropertyGroup` to set minimal version for `XXX_OR_GREATER`. (Default: `2019`)
 - `RevitVersion` to `DefineConstants`.
 - Update `XXX_OR_GREATER` implementation based on [discussions](https://github.com/Nice3point/RevitTemplates/discussions/43).
 - `Test` project with `CountTests` for version `2017`, `2019`, `2021` and `2025`.
