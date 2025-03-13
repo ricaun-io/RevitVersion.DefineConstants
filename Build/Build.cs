@@ -3,8 +3,8 @@ using Nuke.Common.Execution;
 using ricaun.Nuke;
 using ricaun.Nuke.Components;
 
-class Build : NukeBuild, IPublishPack, IPrePack, ITest // ICopyNupkg
+class Build : NukeBuild, IPublishPack, IPrePack, ITest
 {
-    bool IPack.UnlistNuget => true;
+    bool IPack.UnlistNuGet => true;
     public static int Main() => Execute<Build>(x => x.From<IPublishPack>().Build);
 }

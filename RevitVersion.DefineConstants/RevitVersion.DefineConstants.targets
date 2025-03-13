@@ -27,15 +27,19 @@
   </ItemGroup>
 
   <!-- Add RevitVerison and OR_GREATER defines -->
-  <Target Name="GenerateRevitVersionDefineConstants" AfterTargets="PrepareForBuild" Condition="'$(RevitVersion)' != ''">
+  <Target Name="GenerateRevitVersionDefineConstants" AfterTargets="AddImplicitDefineConstants" Condition="'$(RevitVersion)' != ''">
 
     <ItemGroup>
       <_SupportedRevitVersions Include="@(SupportedRevitVersion->'%(Identity)'->TrimStart('REVIT'))" />
       <_CompatibleRevitVersions Include="@(_SupportedRevitVersions)" Condition=" %(Identity) != '' and $([MSBuild]::VersionLessThanOrEquals(%(Identity), $(RevitVersion))) and $([MSBuild]::VersionGreaterThanOrEquals(%(Identity), $(RevitVersionMinimal)))" />
 
-      <_ImplicitDefineConstant Include="REVIT$(RevitVersion)" />
-      <_ImplicitDefineConstant Include="@(_CompatibleRevitVersions->'REVIT%(Identity)_OR_GREATER'->Replace('.', '_'))" />
+      <_RevitDefineConstant Include="REVIT$(RevitVersion)" />
+      <_RevitDefineConstant Include="@(_CompatibleRevitVersions->'REVIT%(Identity)_OR_GREATER'->Replace('.', '_'))" />
     </ItemGroup>
+
+    <PropertyGroup>
+      <DefineConstants>$(DefineConstants);@(_RevitDefineConstant -> '%(Identity)', ';')</DefineConstants>
+    </PropertyGroup>
   </Target>
 
 </Project>
