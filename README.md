@@ -11,8 +11,13 @@ Convert `RevitVersion` property to `DefineConstants` with version `2019+` with [
 
 ## Installation
 
+Install the package using the `NuGet` package manager or using `PackageReference`.
+
 ```xml
-<PackageReference Include="ricaun.RevitVersion.DefineConstants" Version="*-*" />
+<PackageReference Include="ricaun.RevitVersion.DefineConstants" Version="*">
+  <PrivateAssets>all</PrivateAssets>
+  <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+</PackageReference>
 ```
 
 RevitVersion | Define | Define with or-greater
