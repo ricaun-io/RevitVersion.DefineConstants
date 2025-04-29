@@ -96,6 +96,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="$(PackageId).props" PackagePath="build" Pack="true" />
+    <None Include="$(PackageId).targets" PackagePath="build" Pack="true" />
     <Compile Remove="**\*" />
   </ItemGroup>
 

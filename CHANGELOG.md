@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.1] / 2025-04-29
 ### Fix
 - Fix `GitHubRepository` and `README`
+- Fix missing `props`.
 
 ## [1.0.0] / 2024-03-27 - 2025-04-29
 ### Features
