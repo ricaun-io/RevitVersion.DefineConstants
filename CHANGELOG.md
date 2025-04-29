@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
+## [1.0.1] / 2025-04-29
+### Fix
+- Fix `GitHubRepository` and `README`
+
 ## [1.0.0] / 2024-03-27 - 2025-04-29
 ### Features
 - Rename to `ricaun.RevitVersion.DefineConstants`.
@@ -16,4 +20,5 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Update to use `DevelopmentDependency` in `csproj`.
 
 [vNext]: ../../compare/1.0.0...HEAD
+[1.0.1]: ../../compare/1.0.0...1.0.1
 [1.0.0]: ../../compare/1.0.0
