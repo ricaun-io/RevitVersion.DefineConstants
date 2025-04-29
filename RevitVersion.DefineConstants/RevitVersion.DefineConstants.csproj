@@ -46,10 +46,11 @@
   </PropertyGroup>
 
   <PropertyGroup>
+    <GitHubRepository>RevitVersion.DefineConstants</GitHubRepository>
     <GitHubRepositoryOwner>ricaun-io</GitHubRepositoryOwner>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <PackageProjectUrl>https://github.com/$(GitHubRepositoryOwner)/$(PackageId)</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/$(GitHubRepositoryOwner)/$(PackageId)</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/$(GitHubRepositoryOwner)/$(GitHubRepository)</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/$(GitHubRepositoryOwner)/$(GitHubRepository)</RepositoryUrl>
     <RepositoryType>github</RepositoryType>
     <PackageIcon>icon.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
@@ -95,6 +96,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="$(PackageId).props" PackagePath="build" Pack="true" />
+    <None Include="$(PackageId).targets" PackagePath="build" Pack="true" />
     <Compile Remove="**\*" />
   </ItemGroup>
 

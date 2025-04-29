@@ -39,7 +39,7 @@
   <Import Project="..\RevitVersion.DefineConstants\ricaun.RevitVersion.DefineConstants.targets" Condition="$(Configuration.Contains('Debug'))" />
 
   <ItemGroup>
-    <PackageReference Include="RevitVersion.DefineConstants" Version="*-*" Condition="!$(Configuration.Contains('Debug'))" />
+    <PackageReference Include="ricaun.RevitVersion.DefineConstants" Version="*-*" Condition="!$(Configuration.Contains('Debug'))" />
   </ItemGroup>
 
 </Project>
