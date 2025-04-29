@@ -1,8 +1,5 @@
 <Project>
 
-  <!-- Revit DefineConstants. -->
-  <!--<Import Project="RevitVersionConstants.targets"/>-->
-
   <PropertyGroup>
     <RevitVersionMinimal Condition="'$(RevitVersionMinimal)' == ''">2019</RevitVersionMinimal>
   </PropertyGroup>
