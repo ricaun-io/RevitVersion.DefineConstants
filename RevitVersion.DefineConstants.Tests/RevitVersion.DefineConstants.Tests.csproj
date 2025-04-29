@@ -35,8 +35,8 @@
   </ItemGroup>
 
   <!-- Import RevitVersion.DefineConstants props/targets files in Debug -->
-  <Import Project="..\RevitVersion.DefineConstants\RevitVersion.DefineConstants.props" Condition="$(Configuration.Contains('Debug'))" />
-  <Import Project="..\RevitVersion.DefineConstants\RevitVersion.DefineConstants.targets" Condition="$(Configuration.Contains('Debug'))" />
+  <Import Project="..\RevitVersion.DefineConstants\ricaun.RevitVersion.DefineConstants.props" Condition="$(Configuration.Contains('Debug'))" />
+  <Import Project="..\RevitVersion.DefineConstants\ricaun.RevitVersion.DefineConstants.targets" Condition="$(Configuration.Contains('Debug'))" />
 
   <ItemGroup>
     <PackageReference Include="RevitVersion.DefineConstants" Version="*-*" Condition="!$(Configuration.Contains('Debug'))" />

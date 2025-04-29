@@ -1,18 +1,18 @@
 # RevitVersion.DefineConstants
 
-[![Revit 2019+](https://img.shields.io/badge/Revit-2019+-blue.svg)](../..)
-[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](../..)
+[![Revit 2019+](https://img.shields.io/badge/Revit-2019+-blue.svg)](https://github.com/ricaun-io/RevitVersion.DefineConstants)
+[![Visual Studio 2022](https://img.shields.io/badge/Visual%20Studio-2022-blue)](https://github.com/ricaun-io/RevitVersion.DefineConstants)
 [![Nuke](https://img.shields.io/badge/Nuke-Build-blue)](https://nuke.build/)
 [![License MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Build](../../actions/workflows/Build.yml/badge.svg)](../../actions)
-[![Release](https://img.shields.io/nuget/v/RevitVersion.DefineConstants?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/RevitVersion.DefineConstants)
+[![Build](https://github.com/ricaun-io/RevitVersion.DefineConstants/actions/workflows/Build.yml/badge.svg)](https://github.com/ricaun-io/RevitVersion.DefineConstants/actions)
+[![Release](https://img.shields.io/nuget/v/RevitVersion.DefineConstants?logo=nuget&label=release&color=blue)](https://www.nuget.org/packages/ricaun.RevitVersion.DefineConstants)
 
 Convert `RevitVersion` property to `DefineConstants` with version `2019+` with [or-greater-defines](https://github.com/dotnet/designs/blob/main/accepted/2020/or-greater-defines/or-greater-defines.md).
 
 ## Installation
 
 ```xml
-<PackageReference Include="RevitVersion.DefineConstants" Version="*-*" />
+<PackageReference Include="ricaun.RevitVersion.DefineConstants" Version="*-*" />
 ```
 
 RevitVersion | Define | Define with or-greater
@@ -124,4 +124,4 @@ This project is [licensed](LICENSE) under the [MIT License](https://en.wikipedia
 
 ---
 
-Do you like this project? Please [star this project on GitHub](../../stargazers)!
+Do you like this project? Please [star this project on GitHub](https://github.com/ricaun-io/RevitVersion.DefineConstants/stargazers)!

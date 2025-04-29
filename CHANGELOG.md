@@ -6,6 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.0] / 2024-03-27
 ### Features
+- Rename to `ricaun.RevitVersion.DefineConstants`.
 - Support version `2015` to `2030` in `SupportedRevitVersion`.
 - Property `RevitVersion` to `DefineConstants` with `REVITXXXX` and `REVITXXXX_OR_GREATER`.
 - Add `RevitVersionMinimal` `PropertyGroup` to set minimal version for `XXX_OR_GREATER`. (Default: `2019`)

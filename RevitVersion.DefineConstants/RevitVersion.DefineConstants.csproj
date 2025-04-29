@@ -29,7 +29,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <PackageId>RevitVersion.DefineConstants</PackageId>
+    <PackageId>ricaun.RevitVersion.DefineConstants</PackageId>
     <ProjectGuid>{92328A76-ABD3-4197-AB06-19741F2F4566}</ProjectGuid>
   </PropertyGroup>
 
@@ -94,8 +94,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Include="$(MSBuildProjectName).props" PackagePath="build" Pack="true" />
-    <None Include="$(MSBuildProjectName).targets" PackagePath="build" Pack="true" />
     <Compile Remove="**\*" />
   </ItemGroup>
 
