@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [1.0.2] / 2025-06-06
 ### Updated
 - Update to use `AfterTargets`
+- Remove `UnlistNuGet` in `Build` project.
 
 ## [1.0.1] / 2025-04-29
 ### Features
