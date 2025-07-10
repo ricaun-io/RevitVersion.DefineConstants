@@ -6,7 +6,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.0.2] / 2025-06-06
 ### Updated
-- Change to use `BeforeTargets`
+- Update to use `AfterTargets`
 
 ## [1.0.1] / 2025-04-29
 ### Features
