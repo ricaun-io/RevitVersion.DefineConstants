@@ -160,6 +160,9 @@
         },
         "TestResults": {
           "type": "boolean"
+        },
+        "UnlistNuGet": {
+          "type": "boolean"
         }
       }
     },

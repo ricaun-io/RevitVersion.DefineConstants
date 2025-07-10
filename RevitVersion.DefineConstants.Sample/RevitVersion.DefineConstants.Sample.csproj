@@ -5,6 +5,7 @@
     <RevitVersion>2021</RevitVersion>
     <DefineConstants>TEST</DefineConstants>
     <RevitVersionMinimal>2017</RevitVersionMinimal>
+    <UseWPF>true</UseWPF>
   </PropertyGroup>
 
   <!-- Import RevitVersion.DefineConstants props/targets files in Debug -->
